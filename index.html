@@ -10,8 +10,8 @@
             padding: 0;            
         }
         body{
-            background-color: rgb(58, 8, 80);
-            color: rgb(226, 235, 233);
+            background-color: rgb(56, 5, 78);
+            color: rgb(11, 12, 12);
             font-family:'Poppins', sans-serif;
         }
         nav{
@@ -19,7 +19,7 @@
             justify-content: space-around;
             align-items: center;
             height: 80px;
-            background-color: rgb(108, 76, 122);
+            background-color: rgb(236, 235, 238);
         }
         nav ul{
             display: flex;
@@ -29,6 +29,16 @@
             list-style: none;
             margin: 0 20px;
         }
+        nav ul li a{
+            text-decoration: none;
+            color: rgb(11, 12, 12);
+        }
+        nav ul li a:hover{
+            color: rgb(255, 84, 4);
+        }
+        .left{
+            font-size: 1.5rem;
+        }
     </style>
 </head>
 <body>
@@ -37,12 +47,25 @@
             <div class="left">My Portfolio</div>
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Resume</a></li>
+                    <li><a href="/">Contact</a></li>
             </div>
         </nav>
     </header>
+    <main>
+        <section class="first-section">
+            <div class="leftsection">
+            Hi, My name is Piyush
+            <div>and this is my Portfolio Website</div>
+            </div>
+            <div class="rightsection">
+                <img src="coder.jpg" alt="">
+        </div>
+        </section>
+    </main>
 </body>
 </html>
