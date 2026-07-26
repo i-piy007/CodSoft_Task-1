@@ -59,6 +59,14 @@ img{
     background-color: black;
     color: white;
 }
+.brand h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 span{
+    color:black;
+}
 #one{
     background-image: url(/img/space.avif);
     background-color: rgb(156, 13, 218);
@@ -320,8 +328,43 @@ img{
     line-height:2rem;
     font-weight: 500;
 }
-
-
+#footer{
+    background-image:linear-gradient(60deg, #0077ff 0%, #485563 100%);
+}
+#footer .footer{
+    min-height: 200px;
+    flex-direction: column;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+#footer h2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#footer .social-icon{
+    display:flex;
+    margin-bottom: 30px;
+}
+#footer .social-item{
+    height:50px;
+    width:50px;
+    margin: 0 5px;
+}
+#footer .social-item img{
+    box-shadow: 2px 0px 2px 0 #00002c;
+    transition: 0.3s ease transform, box-shadow;
+}
+#footer .social-item:hover img{
+    transform: scale(1.1);
+    box-shadow: 2px 0px 2px 0 #00002c;
+}
+#footer p{
+    color:white;
+}
 
 
 
@@ -339,4 +382,101 @@ img{
     100%{
         color: black;
     }
+}
+
+
+@media only screen and (min-width: 768px){
+    .cta{
+        font-size: 2.5rem;
+        padding:20px 60px;
+    }
+    h1.section-title{
+        font-size: 6rem;
+    }
+    #one h1{
+        font-size: 7rem;
+    }
+    #services .service-bottom .service-item{
+        flex-basis: 45%;
+        margin: 2.5%;
+    }
+    #projects .project-item{
+        flex-direction: row;
+    }
+    #projects .project-items:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    #projects .project-item{
+        height: 400px;
+        margin:0;
+        width:100%;
+        border-radius: 0;
+    }
+    #projects .all-projects .project-info{
+        height: 100%;
+    }
+    #projects .all-projects .project-img{
+        height: 100%;
+    }
+    #about .about{
+        flex-direction: row;
+    }
+    #about .col-left{
+        width: 600px;
+        height: 400px;
+        padding-left: 60px;
+    }
+    #about .about .col-left .about-img::after{
+        left:-45px;
+        top:34px;
+        height:98%;
+        width: 98%;
+        border:10px solid red;
+    }
+    #about .col-right{
+        text-align: left;
+        padding: 30px;
+    }
+    #about .col-right h1{
+        text-align:left;
+    }
+    #contact .contact{
+        flex-direction:column;
+        padding: 100px 0;
+        align-items: center;
+        justify-content: center;
+        min-width: 20vh;
+    }
+    #contact .contact-items{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:0;
+    }
+    #contact .contact-item{
+        width:30%;
+        margin:0;
+        flex-direction: row;
+    }
+    #contact .contact-item .icom{
+        height:100px;
+        width:100px;
+    }
+    #contact .contact-item .icon img{
+        object-fit:contain;
+    }
+    #contact .contact-item .contact-info{
+        width:100%;
+        text-align:left;
+        padding-left:20px;
+    }
+    @media only screen and (min-width: 1200px){
+
+        #services .service-bottom .service-item{
+            flex-basis:22%;
+            margin:1.5%;
+        }
+    }
+        
 }
