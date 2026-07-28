@@ -259,16 +259,21 @@ img{
 #skills .skills-item{
     flex-basis: 80%;
     display: flex;
-    align-items:flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 130px;
+    padding: 40px 20px;
     border-radius: 10px;
     background-image: url(img/skills.jpg);
     background-size: cover;
+    background-position: center;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     overflow: hidden;
+    height: 520px;
+    min-height: 480px;
+    max-height: 520px;
     
 }
 #skills .skills-item::after{
@@ -286,15 +291,19 @@ img{
     height:80px;
     width: 80px;
     margin-bottom: 20px;
+    flex-shrink: 0;
 }
 #skills .skills-item h2{
     font-size: 2rem;
     color: black;
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center;
 }
 #skills .skills-item p{
     color:white;
+    line-height: 1.8;
+    max-width: 90%;
 }
 #projects .projects{
     flex-direction: column;
@@ -535,6 +544,9 @@ img{
     #skills .skills-bottom .skills-item{
         flex-basis: 45%;
         margin: 2.5%;
+        height: 520px;
+        min-height: 480px;
+        max-height: 520px;
     }
     #projects .project-item{
         flex-direction: row;
@@ -632,6 +644,9 @@ img{
         #skills .skills-bottom .skills-item{
             flex-basis:22%;
             margin:1.5%;
+            height: 520px;
+            min-height: 480px;
+            max-height: 520px;
         }
     }
         
