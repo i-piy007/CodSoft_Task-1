@@ -10,7 +10,7 @@ hamb.addEventListener('click',() => {
 document.addEventListener('scroll', () => {
     var scroll_position = window.scrollY;
     if(scroll_position > 250){
-        header.style.backgroundColor = '#6f5a6f4b';
+        header.style.backgroundColor = '#1288dd7e';
     }
     else{
         header.style.backgroundColor = 'transparent';

@@ -311,7 +311,7 @@ img{
     margin: 0 auto;
     padding: 100px 0;
 }
-#projects .projects-header{
+#projects .projects-header h1{
     margin-bottom: 50px;
 }
 #projects .all-projects{
@@ -320,7 +320,7 @@ img{
     justify-content: center;
     flex-direction:column;
 }
-#projects .project-items{
+#projects .project-items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,7 +337,7 @@ img{
     display: flex;
     align-items:flex-start;
     flex-direction: column;
-    background-image: linear-gradient(60deg,rgb(175, 165, 165) 0%, rgb(91, 81, 81) 100%);
+    background-image: linear-gradient(60deg,#0077ffc7 0%, #485563 100%);
     color: white;
 }
 #projects .project-info h1{
@@ -366,7 +366,7 @@ img{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.25;
 }
 #projects .project-img img{
     transition: 0.3s ease transform;
@@ -548,15 +548,15 @@ img{
         min-height: 480px;
         max-height: 520px;
     }
-    #projects .project-item{
+    #projects .project-items{
         flex-direction: row;
     }
     #projects .project-items:nth-child(even){
         flex-direction: row-reverse;
     }
-    #projects .project-item{
+    #projects .project-items{
         height: 400px;
-        margin:0;
+        margin:100;
         width:100%;
         border-radius: 0;
     }
